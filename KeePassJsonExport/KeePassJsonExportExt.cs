@@ -12,6 +12,7 @@ namespace KeePassJsonExport
 			m_host = host;
 
 			m_host.FileFormatPool.Add (new JsonFileFormatProvider ());
+			m_host.FileFormatPool.Add (new BsonFileFormatProvider ());
 
 			return true;
 		}
